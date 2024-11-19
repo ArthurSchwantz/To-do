@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*background: linear-gradient(90deg, #0000CD, #000080, #000080);*/
+  background-color: #000000;
+  max-width: 100%;
+  margin: 0px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 100vh; /*vh = altura do navegador*/
+}
+
+
+
+section {
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden ;
+}
+
+section div.background-section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+section div.background-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+section div.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+sectiondiv.box div.conteudo {
+  width: 80%;
+}
+
+section div.box img {
+  width: 80%;
+  min-width: 300px;
+}
+
+h1 {
+  color: #4a0057;
+  font-size: 40px;
+  text-align: center;
+}
+
+#entrada {
+  height: 44px;
+  border: solid 4px #480281;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  outline: none;
+  width: 76%;
+  border-radius: 2.5px;
+}
+
+#adicionar {
+  padding: 5px;
+  height: 44px;
+  border: none;
+  color: #ffffff;
+  background-color: #480281;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 95px;
+}
+
+#adicionar:hover {
+  background-color: #6004f5;
+}
+
+#adicionar:active {
+  background-color: #7620ff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #4a0057;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  align-items: center; /*Alinhamneto na vertical*/
+  justify-content: space-between; /*Alinhamento na horizontal*/
+  font-weight: bold;
+}
+
+span {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  section div.box {
+    width: 100%;
+  padding: 2%;
+  }
+
+  section div.box div.conteudo {
+    width: 100%;
+    text-align: center;
+  }
+}
